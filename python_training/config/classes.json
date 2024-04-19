@@ -4,11 +4,7 @@
     "topics": ["Code Quality", "Data Structures"],
     "contents": {
         "exercises": [
-            "classes_intro1",
-            "classes_intro2",
-            "classes_intro3",
-            "classes_intro4",
-            "classes_intro5"
+            "intro1"
         ],
         "resources": [
             "Object Oriented Programming",

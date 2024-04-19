@@ -5,6 +5,27 @@ from pathlib import Path
 from attrs import field, define
 
 
+BASE_EXERCISE_TEMPLATE = """
+# Description of exercise
+
+import pytest
+
+
+IGNORE_FILE = True
+
+
+def user_input():
+    ### TODO: ...
+    pass
+
+
+@pytest.mark.skipif(IGNORE_FILE, reason="User not ready")
+def test_user_input():
+    ### TODO...
+    assert user_input() is None
+"""
+
+
 @define(slots=False)
 class Training:
     """Base training module.
@@ -66,7 +87,6 @@ class Training:
                 map(lambda x: f"- {x}", self.contents.get("resources"))
             ),
         }
-
         readme_filepath = self.directory.joinpath("README.md")
         readme_filepath.write_text("\n".join(readme_page.values()))
 
@@ -77,6 +97,9 @@ class Training:
             exercises_filepath.mkdir()
         for exercise in self.contents.get("exercises"):
             # files must begin with test; requirement for pytest
-            fp_exercise = exercises_filepath.joinpath(f"test_{exercise}.py")
+            fp_exercise = exercises_filepath.joinpath(
+                f"test_{self.filepath}_{exercise}.py"
+            )
             if not fp_exercise.is_file():
                 fp_exercise.touch()
+                fp_exercise.write_text(BASE_EXERCISE_TEMPLATE.strip())
