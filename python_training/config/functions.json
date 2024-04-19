@@ -1,0 +1,23 @@
+[{
+    "name": "Functions",
+    "description": "",
+    "topics": ["Code Quality", "Scope"],
+    "contents": {
+        "exercises": [
+            "functions_intro1",
+            "functions_intro2",
+            "functions_intro3",
+            "functions_intro4",
+            "functions_intermediate1",
+            "functions_intermediate2",
+            "functions_intermediate3",
+            "functions_advanced1",
+            "functions_advanced2"
+        ],
+        "resources": [
+            "Organizing Code",
+            "Parameters",
+            "Environment, Scope, and Closure"
+        ]
+    }
+}]

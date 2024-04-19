@@ -1,0 +1,19 @@
+[{
+    "name": "Classes",
+    "description": "Attaching behavior to data.",
+    "topics": ["Code Quality", "Data Structures"],
+    "contents": {
+        "exercises": [
+            "classes_intro1",
+            "classes_intro2",
+            "classes_intro3",
+            "classes_intro4",
+            "classes_intro5"
+        ],
+        "resources": [
+            "Object Oriented Programming",
+            "Mutability vs Immutability",
+            "Polymorphism"
+        ]
+    }
+}]

@@ -1,0 +1,23 @@
+[{
+    "name": "Iteration",
+    "description": "Operating on a collection of elements.",
+    "topics": ["Iteration", "Data Structures"],
+    "contents": {
+        "exercises": [
+            "iteration_intro1",
+            "iteration_intro2",
+            "iteration_intro3",
+            "iteration_intermediate1",
+            "iteration_intermediate2",
+            "iteration_intermediate3",
+            "iteration_advanced1",
+            "iteration_advanced2",
+            "iteration_advanced3"
+        ],
+        "resources": [
+            "Looping in Python",
+            "Comprehension Statements",
+            "collections"
+        ]
+    }
+}]
