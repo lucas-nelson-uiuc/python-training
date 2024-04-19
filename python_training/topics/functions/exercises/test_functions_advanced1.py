@@ -11,6 +11,7 @@ def user_input():
     pass
 
 
+@pytest.mark.parametrize()
 @pytest.mark.skipif(IGNORE_FILE, reason="User not ready")
 def test_user_input():
     ### TODO...

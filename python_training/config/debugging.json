@@ -1,0 +1,17 @@
+[{
+    "name": "Debugging",
+    "description": "Reading and writing exceptions.",
+    "topics": ["Code Quality", "Error Handling"],
+    "contents": {
+        "exercises": [
+            "intro1",
+            "intermediate1",
+            "advanced1"
+        ],
+        "resources": [
+            "Handling Exceptions",
+            "Failing Early",
+            "Tests: unittest, pytest"
+        ]
+    }
+}]

@@ -1,0 +1,16 @@
+[{
+    "name": "Type Hinting",
+    "description": "Incorporating types in code.",
+    "topics": ["Code Quality", "Code Organization", "Error Handling"],
+    "contents": {
+        "exercises": [
+            "intro1",
+            "intermediate1",
+            "advanced1"
+        ],
+        "resources": [
+            "Static Typing",
+            "Static Code Analysis"
+        ]
+    }
+}]
