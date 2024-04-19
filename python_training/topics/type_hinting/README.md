@@ -4,7 +4,6 @@ Incorporating types in code.
 
 ### Topics
 
-
 - Code Quality
 
 - Code Organization
@@ -13,7 +12,6 @@ Incorporating types in code.
 
 
 ### Resources
-
 
 - Static Typing
 

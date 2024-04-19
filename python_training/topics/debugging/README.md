@@ -4,14 +4,12 @@ Reading and writing exceptions.
 
 ### Topics
 
-
 - Code Quality
 
 - Error Handling
 
 
 ### Resources
-
 
 - Handling Exceptions
 

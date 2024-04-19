@@ -4,7 +4,6 @@ Alternative paradigm.
 
 ### Topics
 
-
 - Code Quality
 
 - Scope
@@ -13,7 +12,6 @@ Alternative paradigm.
 
 
 ### Resources
-
 
 - functools
 

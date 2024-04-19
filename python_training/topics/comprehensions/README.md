@@ -1,10 +1,10 @@
-# Python Training - Classes
+# Python Training - Comprehensions
 
-Attaching behavior to data.
+Readable iteration patterns.
 
 ### Topics
 
-- Code Quality
+- Iteration
 
 - Data Structures
 

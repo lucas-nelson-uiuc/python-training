@@ -4,14 +4,12 @@
 
 ### Topics
 
-
 - Code Quality
 
 - Scope
 
 
 ### Resources
-
 
 - Organizing Code
 

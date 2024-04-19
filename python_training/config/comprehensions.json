@@ -1,0 +1,17 @@
+[{
+    "name": "Comprehensions",
+    "description": "Readable iteration patterns.",
+    "topics": ["Iteration", "Data Structures"],
+    "contents": {
+        "exercises": [
+            "intro1",
+            "intermediate1",
+            "advanced1"
+        ],
+        "resources": [
+            "Object Oriented Programming",
+            "Mutability vs Immutability",
+            "Polymorphism"
+        ]
+    }
+}]
