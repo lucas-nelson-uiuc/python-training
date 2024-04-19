@@ -10,16 +10,6 @@ Operating on a collection of elements.
 - Data Structures
 
 
-### Exercises
-
-
-- intro1
-
-- intermediate1
-
-- advanced1
-
-
 ### Resources
 
 

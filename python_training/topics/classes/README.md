@@ -10,12 +10,6 @@ Attaching behavior to data.
 - Data Structures
 
 
-### Exercises
-
-
-- intro1
-
-
 ### Resources
 
 

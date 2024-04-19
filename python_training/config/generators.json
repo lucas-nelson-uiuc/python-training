@@ -1,0 +1,17 @@
+[{
+    "name": "Generator Expressions",
+    "description": "Writing code 'promises'.",
+    "topics": ["Iteration", "Memory Pointers"],
+    "contents": {
+        "exercises": [
+            "intro1",
+            "intermediate1",
+            "advanced1"
+        ],
+        "resources": [
+            "Lazy Evaluation",
+            "Static Code Analysis",
+            "Generator vs Iterator"
+        ]
+    }
+}]

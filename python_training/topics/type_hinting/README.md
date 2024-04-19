@@ -12,16 +12,6 @@ Incorporating types in code.
 - Error Handling
 
 
-### Exercises
-
-
-- intro1
-
-- intermediate1
-
-- advanced1
-
-
 ### Resources
 
 

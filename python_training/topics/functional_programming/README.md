@@ -12,12 +12,6 @@ Alternative paradigm.
 - Iteration
 
 
-### Exercises
-
-
-- intro1
-
-
 ### Resources
 
 
