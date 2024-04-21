@@ -1,4 +1,4 @@
-# Python Training - {{ header }}
+# {{ header }}
 
 {{ description }}
 
