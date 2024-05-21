@@ -3,7 +3,6 @@
 import pytest
 
 
-
 SUBMIT_SOLUTION = False
 
 

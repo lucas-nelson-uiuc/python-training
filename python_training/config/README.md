@@ -3,11 +3,11 @@
 {{ description }}
 
 ### Topics
-{% for topic in topics %}
+{%- for topic in topics -%}
 - {{ topic }}
-{% endfor %}
+{%- endfor -%}
 
 ### Resources
-{% for resource in resources %}
+{%- for resource in resources -%}
 - {{ resource }}
-{% endfor %}
+{%- endfor -%}
