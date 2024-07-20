@@ -1,12 +1,16 @@
 # Iteration
 
-Operating on a collection of elements.
+Operating on a collection of elements using loops and comprehension statements. Understand the different ways to iterate over data structures in Python.
 
 ### Topics
 
-- Iteration
+- For Loops
 
-- Data Structures
+- While Loops
+
+- Comprehension Statements
+
+- collections Module
 
 
 ### Resources

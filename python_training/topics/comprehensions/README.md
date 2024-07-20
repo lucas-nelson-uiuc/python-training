@@ -1,12 +1,16 @@
 # Comprehensions
 
-Readable iteration patterns.
+Readable iteration patterns for creating lists, dictionaries, and sets. Comprehensions offer a concise way to construct these data structures with less code.
 
 ### Topics
 
-- Iteration
+- List Comprehensions
 
-- Data Structures
+- Dictionary Comprehensions
+
+- Set Comprehensions
+
+- Nested Comprehensions
 
 
 ### Resources

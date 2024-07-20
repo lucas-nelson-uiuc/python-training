@@ -1,14 +1,16 @@
 # Functional Programming
 
-Alternative paradigm.
+An alternative programming paradigm focusing on functions and immutability. Learn about pure functions, higher-order functions, lambda expressions, and immutable data.
 
 ### Topics
 
-- Code Quality
+- Pure Functions
 
-- Scope
+- Higher-Order Functions
 
-- Iteration
+- Immutable Data
+
+- Lambda Expressions
 
 
 ### Resources

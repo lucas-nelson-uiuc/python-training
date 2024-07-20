@@ -16,6 +16,7 @@ FILEPATH_README = Path("config/README.md")
 
 class TrainingModel(BaseModel):
     """Pydantic model representation of Training instance"""
+
     name: str
     description: str
     topics: list[str]
@@ -24,6 +25,7 @@ class TrainingModel(BaseModel):
 
 from attrs import define
 import re
+
 
 @define(slots=False)
 class Training:
@@ -39,7 +41,7 @@ class Training:
 
     def create_training(self) -> None:
         """Create default training folder"""
-        
+
         directory_name = re.sub("\s+", "_", self.training_model.name.strip().lower())
         self.directory_path = FILEPATH_TOPICS.joinpath(directory_name)
 

@@ -1,12 +1,16 @@
 # Strings
 
-...
+Manipulating and processing text data using various string operations and methods. Learn about formatting strings and using regular expressions for pattern matching.
 
 ### Topics
 
-- Code Quality
+- String Operations
 
-- Data Structures
+- String Methods
+
+- Formatting Strings
+
+- Regular Expressions
 
 
 ### Resources

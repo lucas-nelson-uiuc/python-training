@@ -1,12 +1,14 @@
 # Arithmetic
 
-...
+Understanding and performing basic arithmetic operations like addition, subtraction, multiplication, and division. Learn how to work with integers and floats, and understand the order of operations in Python.
 
 ### Topics
 
-- Code Quality
+- Addition, Subtraction, Multiplication, Division
 
-- Data Structures
+- Order of Operations
+
+- Integer and Float Operations
 
 
 ### Resources

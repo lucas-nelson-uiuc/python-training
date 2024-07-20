@@ -1,12 +1,16 @@
 # Generator Expressions
 
-Writing code 'promises'.
+Writing code 'promises' that are evaluated lazily, which improves memory efficiency. Learn about generators vs iterators, the yield statement, and lazy evaluation.
 
 ### Topics
 
-- Iteration
+- Generators vs Iterators
 
-- Memory Pointers
+- Yield Statement
+
+- Lazy Evaluation
+
+- Memory Efficiency
 
 
 ### Resources

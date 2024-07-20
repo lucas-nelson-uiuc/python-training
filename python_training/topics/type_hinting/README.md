@@ -1,14 +1,16 @@
 # Type Hinting
 
-Incorporating types in code.
+Incorporating types in code for better readability and error checking. Understand static typing, type annotations, type checking, and static code analysis in Python.
 
 ### Topics
 
-- Code Quality
+- Static Typing
 
-- Code Organization
+- Type Annotations
 
-- Error Handling
+- Type Checking
+
+- Static Code Analysis
 
 
 ### Resources

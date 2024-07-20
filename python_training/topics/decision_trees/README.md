@@ -1,12 +1,16 @@
 # Decision Trees
 
-Reading and writing exceptions.
+Building and using decision trees for data analysis and machine learning. Understand tree structure, splitting criteria, pruning, and their applications.
 
 ### Topics
 
-- Code Quality
+- Tree Structure
 
-- Error Handling
+- Splitting Criteria
+
+- Pruning
+
+- Applications in Machine Learning
 
 
 ### Resources

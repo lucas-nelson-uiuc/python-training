@@ -1,12 +1,16 @@
 # Classes
 
-Attaching behavior to data.
+Attaching behavior to data by defining classes. Learn how to create objects, define methods and attributes, and implement inheritance and polymorphism.
 
 ### Topics
 
-- Code Quality
+- Defining Classes
 
-- Data Structures
+- Creating Objects
+
+- Methods and Attributes
+
+- Inheritance and Polymorphism
 
 
 ### Resources

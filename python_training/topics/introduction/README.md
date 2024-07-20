@@ -1,12 +1,16 @@
 # Introduction
 
-...
+Getting started with Python basics, including variables, data types, control flow, and basic input/output. This foundational knowledge is essential for all Python programming.
 
 ### Topics
 
-- Code Quality
+- Variables
 
-- Data Structures
+- Data Types
+
+- Control Flow
+
+- Basic I/O
 
 
 ### Resources

@@ -1,12 +1,16 @@
 # Debugging
 
-Reading and writing exceptions.
+Reading and writing exceptions to handle errors effectively. Learn about try-except blocks, raising exceptions, logging errors, and using debugging tools.
 
 ### Topics
 
-- Code Quality
+- Try-Except Blocks
 
-- Error Handling
+- Raising Exceptions
+
+- Logging Errors
+
+- Debugging Tools
 
 
 ### Resources

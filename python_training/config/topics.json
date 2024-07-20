@@ -1,8 +1,12 @@
 [
     {
         "name": "Arithmetic",
-        "description": "...",
-        "topics": ["Code Quality", "Data Structures"],
+        "description": "Understanding and performing basic arithmetic operations like addition, subtraction, multiplication, and division. Learn how to work with integers and floats, and understand the order of operations in Python.",
+        "topics": [
+            "Addition, Subtraction, Multiplication, Division",
+            "Order of Operations",
+            "Integer and Float Operations"
+        ],
         "contents": {
             "resources": [
                 "Object Oriented Programming",
@@ -13,8 +17,13 @@
     },
     {
         "name": "Classes",
-        "description": "Attaching behavior to data.",
-        "topics": ["Code Quality", "Data Structures"],
+        "description": "Attaching behavior to data by defining classes. Learn how to create objects, define methods and attributes, and implement inheritance and polymorphism.",
+        "topics": [
+            "Defining Classes",
+            "Creating Objects",
+            "Methods and Attributes",
+            "Inheritance and Polymorphism"
+        ],
         "contents": {
             "resources": [
                 "Object Oriented Programming",
@@ -25,8 +34,48 @@
     },
     {
         "name": "Comprehensions",
-        "description": "Readable iteration patterns.",
-        "topics": ["Iteration", "Data Structures"],
+        "description": "Readable iteration patterns for creating lists, dictionaries, and sets. Comprehensions offer a concise way to construct these data structures with less code.",
+        "topics": [
+            "List Comprehensions",
+            "Dictionary Comprehensions",
+            "Set Comprehensions",
+            "Nested Comprehensions"
+        ],
+        "contents": {
+            "resources": [
+                "Object Oriented Programming",
+                "Mutability vs Immutability",
+                "Polymorphism"
+            ]
+        }
+    },
+    {
+        "name": "Conditional Expressions",
+        "description": "Patterns to control the flow of your program using if, else, and elif statements. Conditional expressions help manage decision-making in your code.",
+        "topics": [
+            "If Statements",
+            "Else and Elif",
+            "Ternary Operators",
+            "Nested Conditionals"
+        ],
+        "contents": {
+            "resources": [
+                "Object Oriented Programming",
+                "Mutability vs Immutability",
+                "Polymorphism"
+            ]
+        }
+    },
+    {
+        "name": "Data Structures",
+        "description": "Organizing and storing data efficiently using lists, tuples, dictionaries, and sets. Learn about the collections module for specialized data structures.",
+        "topics": [
+            "Lists",
+            "Tuples",
+            "Dictionaries",
+            "Sets",
+            "collections Module"
+        ],
         "contents": {
             "resources": [
                 "Object Oriented Programming",
@@ -37,9 +86,14 @@
     },
     {
         "name": "Data Types",
-        "description": "...",
-        "order": 2,
-        "topics": ["Code Quality", "Data Structures"],
+        "description": "Understanding different data types and their uses in Python. Learn about integers, floats, strings, and booleans, and how to perform type conversion.",
+        "topics": [
+            "Integers",
+            "Floats",
+            "Strings",
+            "Booleans",
+            "Type Conversion"
+        ],
         "contents": {
             "resources": [
                 "Object Oriented Programming",
@@ -50,8 +104,13 @@
     },
     {
         "name": "Debugging",
-        "description": "Reading and writing exceptions.",
-        "topics": ["Code Quality", "Error Handling"],
+        "description": "Reading and writing exceptions to handle errors effectively. Learn about try-except blocks, raising exceptions, logging errors, and using debugging tools.",
+        "topics": [
+            "Try-Except Blocks",
+            "Raising Exceptions",
+            "Logging Errors",
+            "Debugging Tools"
+        ],
         "contents": {
             "resources": [
                 "Handling Exceptions",
@@ -62,9 +121,13 @@
     },
     {
         "name": "Decision Trees",
-        "description": "Reading and writing exceptions.",
-        "order": 4,
-        "topics": ["Code Quality", "Error Handling"],
+        "description": "Building and using decision trees for data analysis and machine learning. Understand tree structure, splitting criteria, pruning, and their applications.",
+        "topics": [
+            "Tree Structure",
+            "Splitting Criteria",
+            "Pruning",
+            "Applications in Machine Learning"
+        ],
         "contents": {
             "resources": [
                 "Handling Exceptions",
@@ -75,8 +138,13 @@
     },
     {
         "name": "Functional Programming",
-        "description": "Alternative paradigm.",
-        "topics": ["Code Quality", "Scope", "Iteration"],
+        "description": "An alternative programming paradigm focusing on functions and immutability. Learn about pure functions, higher-order functions, lambda expressions, and immutable data.",
+        "topics": [
+            "Pure Functions",
+            "Higher-Order Functions",
+            "Immutable Data",
+            "Lambda Expressions"
+        ],
         "contents": {
             "resources": [
                 "functools",
@@ -88,8 +156,13 @@
     },
     {
         "name": "Functions",
-        "description": "",
-        "topics": ["Code Quality", "Scope"],
+        "description": "Defining and using functions to organize code and perform tasks. Understand function definitions, arguments and parameters, return values, and scope.",
+        "topics": [
+            "Function Definitions",
+            "Arguments and Parameters",
+            "Return Values",
+            "Scope and Closure"
+        ],
         "contents": {
             "resources": [
                 "Organizing Code",
@@ -100,8 +173,13 @@
     },
     {
         "name": "Generator Expressions",
-        "description": "Writing code 'promises'.",
-        "topics": ["Iteration", "Memory Pointers"],
+        "description": "Writing code 'promises' that are evaluated lazily, which improves memory efficiency. Learn about generators vs iterators, the yield statement, and lazy evaluation.",
+        "topics": [
+            "Generators vs Iterators",
+            "Yield Statement",
+            "Lazy Evaluation",
+            "Memory Efficiency"
+        ],
         "contents": {
             "resources": [
                 "Lazy Evaluation",
@@ -112,8 +190,13 @@
     },
     {
         "name": "Iteration",
-        "description": "Operating on a collection of elements.",
-        "topics": ["Iteration", "Data Structures"],
+        "description": "Operating on a collection of elements using loops and comprehension statements. Understand the different ways to iterate over data structures in Python.",
+        "topics": [
+            "For Loops",
+            "While Loops",
+            "Comprehension Statements",
+            "collections Module"
+        ],
         "contents": {
             "resources": [
                 "Looping in Python",
@@ -124,9 +207,30 @@
     },
     {
         "name": "Introduction",
-        "description": "...",
-        "order": 1,
-        "topics": ["Code Quality", "Data Structures"],
+        "description": "Getting started with Python basics, including variables, data types, control flow, and basic input/output. This foundational knowledge is essential for all Python programming.",
+        "topics": [
+            "Variables",
+            "Data Types",
+            "Control Flow",
+            "Basic I/O"
+        ],
+        "contents": {
+            "resources": [
+                "Object Oriented Programming",
+                "Mutability vs Immutability",
+                "Polymorphism"
+            ]
+        }
+    },
+    {
+        "name": "Loops",
+        "description": "Understanding and using loops to repeat actions and process collections of data. Learn about for loops, while loops, nested loops, and loop control statements.",
+        "topics": [
+            "For Loops",
+            "While Loops",
+            "Nested Loops",
+            "Loop Control (break, continue)"
+        ],
         "contents": {
             "resources": [
                 "Object Oriented Programming",
@@ -137,8 +241,13 @@
     },
     {
         "name": "Strings",
-        "description": "...",
-        "topics": ["Code Quality", "Data Structures"],
+        "description": "Manipulating and processing text data using various string operations and methods. Learn about formatting strings and using regular expressions for pattern matching.",
+        "topics": [
+            "String Operations",
+            "String Methods",
+            "Formatting Strings",
+            "Regular Expressions"
+        ],
         "contents": {
             "resources": [
                 "Object Oriented Programming",
@@ -149,8 +258,13 @@
     },
     {
         "name": "Type Hinting",
-        "description": "Incorporating types in code.",
-        "topics": ["Code Quality", "Code Organization", "Error Handling"],
+        "description": "Incorporating types in code for better readability and error checking. Understand static typing, type annotations, type checking, and static code analysis in Python.",
+        "topics": [
+            "Static Typing",
+            "Type Annotations",
+            "Type Checking",
+            "Static Code Analysis"
+        ],
         "contents": {
             "resources": [
                 "Static Typing",
