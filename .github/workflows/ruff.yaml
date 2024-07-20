@@ -9,3 +9,4 @@ jobs:
         with:
             args: 'format --check'
             src: './python_training'
+            changed-files: 'true'
