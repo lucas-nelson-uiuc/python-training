@@ -6,7 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: chartboost/ruff-action@v1
-      with:
-        version: 0.0.259
-        args: format .
-        src: "./src"
+        with:
+            args: format .
+            src: "./src"
