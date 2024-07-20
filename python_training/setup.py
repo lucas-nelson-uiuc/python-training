@@ -1,5 +1,4 @@
 import json
-from pathlib import Path
 
 from python_training.config import TrainingModel, TrainingConfig, FILEPATH_SETUP
 
