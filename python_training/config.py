@@ -121,7 +121,9 @@ class TrainingConfig:
             solution_rendered = solution_template.render(
                 {
                     "topic_import_path": topic_import_path,
-                    "topic_name": self.generate_filename("topic", i, topic_name, suffix=""),
+                    "topic_name": self.generate_filename(
+                        "topic", i, topic_name, suffix=""
+                    ),
                     # "topic_name": f"topic_{str(i).zfill(2)}_{topic_name}",
                 }
             )
