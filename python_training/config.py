@@ -8,10 +8,11 @@ from attrs import define
 from jinja2 import Environment, FileSystemLoader
 
 
-FILEPATH_TOPICS = Path("python_training/topics")
 FILEPATH_CONFIG = Path("python_training/config")
-FILEPATH_SOLUTIONS = Path("python_training/solutions")
+FILEPATH_SETUP = FILEPATH_CONFIG.joinpath("topics.json")
 
+FILEPATH_TOPICS = Path("python_training/topics")
+FILEPATH_SOLUTIONS = Path("python_training/solutions")
 FILEPATH_EXERCISES = Path("exercises")
 
 FILEPATH_BASE_SCRIPT = FILEPATH_CONFIG.joinpath("base_script.py")
@@ -29,7 +30,7 @@ class TrainingModel(BaseModel):
 
 
 @define(slots=False)
-class Training:
+class TrainingConfig:
     """Base training module.
 
     Training modules provide methods for detailing specific configurations
@@ -40,14 +41,13 @@ class Training:
 
     training_model: dict
 
+    def normalize_filepath(filepath: str, str_case: str = "lower") -> str:
+        invalid_chars = re.compile(f"[\s{string.punctuation}]+")
+        return invalid_chars.sub("_", getattr(str, str_case)(filepath.strip()))
 
     def create_training(self) -> None:
         """Create default training folder"""
-
-        self.directory_name = re.sub(
-            f"[\s{string.punctuation}]+", "_", self.training_model.name.strip().lower()
-        )
-        # directory_index = str(self.training_model.order - 1).zfill(2)
+        self.directory_name = self.normalize_filepath(self.training_model.name)
         self.directory_path = FILEPATH_TOPICS.joinpath(self.directory_name)
 
         if not self.directory_path.is_dir():
@@ -57,7 +57,6 @@ class Training:
         self.create_exercises()
         self.create_solutions()
 
-
     def create_readme(self) -> None:
         """Write README contents to README file"""
         readme_page = {
@@ -66,14 +65,11 @@ class Training:
             "topics": self.training_model.topics,
             "resources": self.training_model.contents.get("resources"),
         }
-
         jinja_env = Environment(loader=FileSystemLoader("python_training/config"))
         readme_template = jinja_env.get_template("README.md")
         readme_rendered = readme_template.render(readme_page)
-
         readme_filepath = self.directory_path.joinpath("README.md")
         readme_filepath.write_text(readme_rendered)
-
 
     def create_exercises(self) -> None:
         """Iteratively pouplate Exercises folder with exercises"""
@@ -84,14 +80,13 @@ class Training:
 
         base_exercise = FILEPATH_BASE_SCRIPT.read_text()
         for i, topic in enumerate(self.training_model.topics):
-            topic_name = re.sub(f"[\s{string.punctuation}]+", "_", topic.strip().lower())
+            topic_name = self.normalize_filepath(topic)
             fp_exercise = exercises_filepath.joinpath(
                 f"topic_{str(i).zfill(2)}_{topic_name}.py"
             )
             if not fp_exercise.is_file():
                 fp_exercise.touch()
                 fp_exercise.write_text(base_exercise)
-
 
     def create_solutions(self) -> None:
         solutions_filepath = FILEPATH_SOLUTIONS.joinpath(self.directory_name)
@@ -114,7 +109,7 @@ class Training:
         jinja_env = Environment(loader=FileSystemLoader("python_training/config"))
         solution_template = jinja_env.get_template("base_solution.py")
         for i, topic in enumerate(self.training_model.topics):
-            topic_name = re.sub(f"[\s{string.punctuation}]+", "_", topic.strip().lower())
+            topic_name = self.normalize_filepath(topic)
             solution_rendered = solution_template.render(
                 {
                     "topic_import_path": topic_import_path,

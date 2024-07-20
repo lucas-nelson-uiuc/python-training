@@ -4,7 +4,7 @@ from python_training.topics.basic_syntax_and_data_types.exercises.topic_02_strin
     string_concatenation,
     string_escaping,
     string_formatting,
-    string_repetition
+    string_repetition,
 )
 
 
