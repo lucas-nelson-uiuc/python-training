@@ -41,6 +41,18 @@ pt --hint strings
 pt --hint strings[string_concatenation]
 ```
 
+### TODO
+
+* Command line interface
+
+* Integrate tests for package
+
+    - `setup` can correctly create folders
+
+    - `solutions` correctly answers respective question(s)
+
+* Finish setting up GitHub repository for contributing/using
+
 ### Contributing
 
 See link to `Contributing.md`

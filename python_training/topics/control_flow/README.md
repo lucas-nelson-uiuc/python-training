@@ -4,13 +4,11 @@ Control flow statements are crucial for directing the execution of your code bas
 
 ### Topics
 
-- If
+- If-Else
 
 - Loops
 
-- Break
-
-- Continue
+- Break and Continue
 
 
 ### Resources

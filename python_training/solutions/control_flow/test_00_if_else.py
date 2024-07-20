@@ -1,5 +1,7 @@
+# ruff: noqa
+
 import pytest
-from python_training.topics.control_flow.exercises.topic_03_continue import (
+from python_training.topics.control_flow.exercises.topic_00_if_else import (
     SUBMIT_SOLUTION,
     # ... other tests here ...
 )

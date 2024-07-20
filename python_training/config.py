@@ -9,7 +9,7 @@ from jinja2 import Environment, FileSystemLoader
 
 
 FILEPATH_CONFIG = Path("python_training/config")
-FILEPATH_SETUP = FILEPATH_CONFIG.joinpath("topics.json")
+FILEPATH_SETUP = FILEPATH_CONFIG.joinpath("config.json")
 
 FILEPATH_TOPICS = Path("python_training/topics")
 FILEPATH_SOLUTIONS = Path("python_training/solutions")
@@ -41,9 +41,17 @@ class TrainingConfig:
 
     training_model: dict
 
-    def normalize_filepath(filepath: str, str_case: str = "lower") -> str:
+    def normalize_filepath(self, filepath: str, str_case: str = "lower") -> str:
+        """Construct compliant filepath (default: lower snakecase)"""
         invalid_chars = re.compile(f"[\s{string.punctuation}]+")
         return invalid_chars.sub("_", getattr(str, str_case)(filepath.strip()))
+
+    def generate_filename(
+        self, prefix: str, index: int, name: str, sep: str = "_", suffix: str = ".py"
+    ) -> str:
+        """Construct filename with specific pattern given parameters"""
+        filename = sep.join([prefix, str(index).zfill(2), name])
+        return f"{filename}{suffix}"
 
     def create_training(self) -> None:
         """Create default training folder"""
@@ -72,7 +80,7 @@ class TrainingConfig:
         readme_filepath.write_text(readme_rendered)
 
     def create_exercises(self) -> None:
-        """Iteratively pouplate Exercises folder with exercises"""
+        """Iteratively pouplate Exercises folder with template exercise files"""
         exercises_filepath = self.directory_path.joinpath(FILEPATH_EXERCISES)
 
         if not exercises_filepath.is_dir():
@@ -82,21 +90,21 @@ class TrainingConfig:
         for i, topic in enumerate(self.training_model.topics):
             topic_name = self.normalize_filepath(topic)
             fp_exercise = exercises_filepath.joinpath(
-                f"topic_{str(i).zfill(2)}_{topic_name}.py"
+                self.generate_filename("topic", i, topic_name, suffix=".py")
             )
             if not fp_exercise.is_file():
                 fp_exercise.touch()
                 fp_exercise.write_text(base_exercise)
 
     def create_solutions(self) -> None:
+        """Iteratively populate Solutions folder with template solution files"""
         solutions_filepath = FILEPATH_SOLUTIONS.joinpath(self.directory_name)
-        # python_training.topics.automation_projects.exercises.topic_00_files
         topic_import_path = ".".join(
             map(
                 str,
                 [
                     "python_training",
-                    FILEPATH_TOPICS,
+                    FILEPATH_TOPICS.stem,
                     self.directory_path.stem,
                     FILEPATH_EXERCISES,
                 ],
@@ -113,7 +121,8 @@ class TrainingConfig:
             solution_rendered = solution_template.render(
                 {
                     "topic_import_path": topic_import_path,
-                    "topic_name": f"topic_{str(i).zfill(2)}_{topic_name}",
+                    "topic_name": self.generate_filename("topic", i, topic_name, suffix=""),
+                    # "topic_name": f"topic_{str(i).zfill(2)}_{topic_name}",
                 }
             )
             fp_solution = solutions_filepath.joinpath(

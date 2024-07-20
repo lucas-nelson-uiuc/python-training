@@ -40,10 +40,9 @@
         "description": "Control flow statements are crucial for directing the execution of your code based on certain conditions. This section explores conditional statements (if, elif, else) and loops (for, while), allowing you to create dynamic and responsive programs. You'll learn how to use these constructs to control the flow of your code and handle different scenarios effectively.",
         "order": 3,
         "topics": [
-            "If",
+            "If-Else",
             "Loops",
-            "Break",
-            "Continue"
+            "Break and Continue"
         ],
         "contents": {
             "resources": [
