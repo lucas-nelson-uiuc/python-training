@@ -1,3 +1,5 @@
+# ruff: noqa
+
 import pytest
 from {{topic_import_path}}.{{topic_name}} import (
     SUBMIT_SOLUTION,
