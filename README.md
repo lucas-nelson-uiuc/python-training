@@ -27,6 +27,8 @@ def name_of_problem():
     return solution
 ```
 
+> #### *The following feature is in-progress*
+
 For all problems, the solution can be found tracing the same path in the `solutions` folder (`solutions/<chapter>/topic`). If you need to review the solution for a problem(s), rather than opening the file yourself, you can use the command line argument `pt --hint` to get a hint for the problem(s) requested.
 
 ```bash

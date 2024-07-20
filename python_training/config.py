@@ -46,7 +46,9 @@ class TrainingConfig:
         invalid_chars = re.compile(f"[\s{string.punctuation}]+")
         return invalid_chars.sub("_", getattr(str, str_case)(filepath.strip()))
 
-    def generate_filename(self, prefix: str, index: int, name: str, sep: str = "_", suffix: str = ".py") -> str:
+    def generate_filename(
+        self, prefix: str, index: int, name: str, sep: str = "_", suffix: str = ".py"
+    ) -> str:
         """Construct filename with specific pattern given parameters"""
         filename = sep.join([prefix, str(index).zfill(2), name])
         return f"{filename}{suffix}"
