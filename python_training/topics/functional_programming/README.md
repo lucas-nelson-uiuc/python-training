@@ -1,16 +1,16 @@
 # Functional Programming
 
-An alternative programming paradigm focusing on functions and immutability. Learn about pure functions, higher-order functions, lambda expressions, and immutable data.
+Functional programming is an alternative programming paradigm that emphasizes the use of pure functions and immutability. This section explores the principles of functional programming in Python, including higher-order functions, lambda expressions, and the use of immutable data structures.
 
 ### Topics
 
-- Pure Functions
+- Pure
 
-- Higher-Order Functions
+- Higher-Order
 
-- Immutable Data
+- Immutable
 
-- Lambda Expressions
+- Lambda
 
 
 ### Resources
@@ -20,5 +20,3 @@ An alternative programming paradigm focusing on functions and immutability. Lear
 - itertools
 
 - Vectorization
-
-- 4

@@ -1,274 +1,158 @@
 [
     {
-        "name": "Arithmetic",
-        "description": "Understanding and performing basic arithmetic operations like addition, subtraction, multiplication, and division. Learn how to work with integers and floats, and understand the order of operations in Python.",
+        "name": "Basic Syntax and Data Types",
+        "description": "Understanding Python's basic syntax and data types is essential for writing effective code. This section covers the fundamental elements of Python programming, including variables, data types (such as integers, floats, strings, and booleans), and basic operators. You'll learn how to perform simple operations and manipulate data, forming the building blocks for more complex programs.",
+        "order": 1,
         "topics": [
-            "Addition, Subtraction, Multiplication, Division",
-            "Order of Operations",
-            "Integer and Float Operations"
+            "Variables",
+            "Operators",
+            "Strings",
+            "Numerics",
+            "Booleans"
         ],
         "contents": {
             "resources": [
-                "Object Oriented Programming",
-                "Mutability vs Immutability",
-                "Polymorphism"
-            ]
-        }
-    },
-    {
-        "name": "Classes",
-        "description": "Attaching behavior to data by defining classes. Learn how to create objects, define methods and attributes, and implement inheritance and polymorphism.",
-        "topics": [
-            "Defining Classes",
-            "Creating Objects",
-            "Methods and Attributes",
-            "Inheritance and Polymorphism"
-        ],
-        "contents": {
-            "resources": [
-                "Object Oriented Programming",
-                "Mutability vs Immutability",
-                "Polymorphism"
-            ]
-        }
-    },
-    {
-        "name": "Comprehensions",
-        "description": "Readable iteration patterns for creating lists, dictionaries, and sets. Comprehensions offer a concise way to construct these data structures with less code.",
-        "topics": [
-            "List Comprehensions",
-            "Dictionary Comprehensions",
-            "Set Comprehensions",
-            "Nested Comprehensions"
-        ],
-        "contents": {
-            "resources": [
-                "Object Oriented Programming",
-                "Mutability vs Immutability",
-                "Polymorphism"
-            ]
-        }
-    },
-    {
-        "name": "Conditional Expressions",
-        "description": "Patterns to control the flow of your program using if, else, and elif statements. Conditional expressions help manage decision-making in your code.",
-        "topics": [
-            "If Statements",
-            "Else and Elif",
-            "Ternary Operators",
-            "Nested Conditionals"
-        ],
-        "contents": {
-            "resources": [
-                "Object Oriented Programming",
-                "Mutability vs Immutability",
-                "Polymorphism"
+                "Variables and Data Types",
+                "Basic Operators"
             ]
         }
     },
     {
         "name": "Data Structures",
-        "description": "Organizing and storing data efficiently using lists, tuples, dictionaries, and sets. Learn about the collections module for specialized data structures.",
+        "description": "Python offers a variety of built-in data structures, each suited for different types of data manipulation and storage. This section delves into lists, tuples, sets, and dictionaries, explaining their characteristics and use cases. You'll also learn about list comprehensions, a powerful feature for creating and transforming lists in a concise and readable manner.",
+        "order": 2,
         "topics": [
             "Lists",
             "Tuples",
-            "Dictionaries",
             "Sets",
-            "collections Module"
+            "Dictionaries",
+            "Comprehensions"
+        ],
+        "contents": {
+            "resources": [
+                "Lists and Tuples",
+                "Dictionaries and Sets"
+            ]
+        }
+    },
+    {
+        "name": "Control Flow",
+        "description": "Control flow statements are crucial for directing the execution of your code based on certain conditions. This section explores conditional statements (if, elif, else) and loops (for, while), allowing you to create dynamic and responsive programs. You'll learn how to use these constructs to control the flow of your code and handle different scenarios effectively.",
+        "order": 3,
+        "topics": [
+            "If",
+            "Loops",
+            "Break",
+            "Continue"
+        ],
+        "contents": {
+            "resources": [
+                "Conditional Statements",
+                "Loop Statements"
+            ]
+        }
+    },
+    {
+        "name": "Functions and Modules",
+        "description": "Functions and modules are essential components of Python programming, promoting code reusability and modularity. This section teaches you how to define and call functions, use function arguments and return values, and import and use modules. By the end of this section, you'll be able to organize your code into reusable blocks and leverage Python's extensive standard library.",
+        "order": 4,
+        "topics": [
+            "Defining",
+            "Arguments",
+            "Return",
+            "Import"
+        ],
+        "contents": {
+            "resources": [
+                "Defining Functions",
+                "Using Modules"
+            ]
+        }
+    },
+    {
+        "name": "Exception Handling",
+        "description": "Handling exceptions is a critical aspect of writing robust and error-free code. This section introduces Python's exception handling mechanism, explaining how to use try, except, and finally blocks to manage errors gracefully. You'll also learn how to raise exceptions and create custom exception classes, ensuring your programs can handle unexpected situations effectively.",
+        "order": 5,
+        "topics": [
+            "Try",
+            "Except",
+            "Raise",
+            "Custom"
+        ],
+        "contents": {
+            "resources": [
+                "Using Try-Except",
+                "Raising Exceptions"
+            ]
+        }
+    },
+    {
+        "name": "Object Oriented Programming",
+        "description": "Object-oriented programming (OOP) in Python involves creating classes and objects to encapsulate data and behavior. This section covers the basics of defining classes, creating objects, and implementing methods and attributes. You'll also learn about inheritance and polymorphism, which allow for more flexible and reusable code.",
+        "order": 6,
+        "topics": [
+            "Classes",
+            "Objects",
+            "Methods",
+            "Inheritance"
         ],
         "contents": {
             "resources": [
                 "Object Oriented Programming",
                 "Mutability vs Immutability",
                 "Polymorphism"
-            ]
-        }
-    },
-    {
-        "name": "Data Types",
-        "description": "Understanding different data types and their uses in Python. Learn about integers, floats, strings, and booleans, and how to perform type conversion.",
-        "topics": [
-            "Integers",
-            "Floats",
-            "Strings",
-            "Booleans",
-            "Type Conversion"
-        ],
-        "contents": {
-            "resources": [
-                "Object Oriented Programming",
-                "Mutability vs Immutability",
-                "Polymorphism"
-            ]
-        }
-    },
-    {
-        "name": "Debugging",
-        "description": "Reading and writing exceptions to handle errors effectively. Learn about try-except blocks, raising exceptions, logging errors, and using debugging tools.",
-        "topics": [
-            "Try-Except Blocks",
-            "Raising Exceptions",
-            "Logging Errors",
-            "Debugging Tools"
-        ],
-        "contents": {
-            "resources": [
-                "Handling Exceptions",
-                "Failing Early",
-                "Tests: unittest, pytest"
-            ]
-        }
-    },
-    {
-        "name": "Decision Trees",
-        "description": "Building and using decision trees for data analysis and machine learning. Understand tree structure, splitting criteria, pruning, and their applications.",
-        "topics": [
-            "Tree Structure",
-            "Splitting Criteria",
-            "Pruning",
-            "Applications in Machine Learning"
-        ],
-        "contents": {
-            "resources": [
-                "Handling Exceptions",
-                "Failing Early",
-                "Tests: unittest, pytest"
             ]
         }
     },
     {
         "name": "Functional Programming",
-        "description": "An alternative programming paradigm focusing on functions and immutability. Learn about pure functions, higher-order functions, lambda expressions, and immutable data.",
+        "description": "Functional programming is an alternative programming paradigm that emphasizes the use of pure functions and immutability. This section explores the principles of functional programming in Python, including higher-order functions, lambda expressions, and the use of immutable data structures.",
+        "order": 7,
         "topics": [
-            "Pure Functions",
-            "Higher-Order Functions",
-            "Immutable Data",
-            "Lambda Expressions"
+            "Pure",
+            "Higher-Order",
+            "Immutable",
+            "Lambda"
         ],
         "contents": {
             "resources": [
                 "functools",
                 "itertools",
-                "Vectorization",
-                "4"
-            ]
-        }
-    },
-    {
-        "name": "Functions",
-        "description": "Defining and using functions to organize code and perform tasks. Understand function definitions, arguments and parameters, return values, and scope.",
-        "topics": [
-            "Function Definitions",
-            "Arguments and Parameters",
-            "Return Values",
-            "Scope and Closure"
-        ],
-        "contents": {
-            "resources": [
-                "Organizing Code",
-                "Parameters",
-                "Environment, Scope, and Closure"
-            ]
-        }
-    },
-    {
-        "name": "Generator Expressions",
-        "description": "Writing code 'promises' that are evaluated lazily, which improves memory efficiency. Learn about generators vs iterators, the yield statement, and lazy evaluation.",
-        "topics": [
-            "Generators vs Iterators",
-            "Yield Statement",
-            "Lazy Evaluation",
-            "Memory Efficiency"
-        ],
-        "contents": {
-            "resources": [
-                "Lazy Evaluation",
-                "Static Code Analysis",
-                "Generator vs Iterator"
-            ]
-        }
-    },
-    {
-        "name": "Iteration",
-        "description": "Operating on a collection of elements using loops and comprehension statements. Understand the different ways to iterate over data structures in Python.",
-        "topics": [
-            "For Loops",
-            "While Loops",
-            "Comprehension Statements",
-            "collections Module"
-        ],
-        "contents": {
-            "resources": [
-                "Looping in Python",
-                "Comprehension Statements",
-                "collections"
-            ]
-        }
-    },
-    {
-        "name": "Introduction",
-        "description": "Getting started with Python basics, including variables, data types, control flow, and basic input/output. This foundational knowledge is essential for all Python programming.",
-        "topics": [
-            "Variables",
-            "Data Types",
-            "Control Flow",
-            "Basic I/O"
-        ],
-        "contents": {
-            "resources": [
-                "Object Oriented Programming",
-                "Mutability vs Immutability",
-                "Polymorphism"
-            ]
-        }
-    },
-    {
-        "name": "Loops",
-        "description": "Understanding and using loops to repeat actions and process collections of data. Learn about for loops, while loops, nested loops, and loop control statements.",
-        "topics": [
-            "For Loops",
-            "While Loops",
-            "Nested Loops",
-            "Loop Control (break, continue)"
-        ],
-        "contents": {
-            "resources": [
-                "Object Oriented Programming",
-                "Mutability vs Immutability",
-                "Polymorphism"
-            ]
-        }
-    },
-    {
-        "name": "Strings",
-        "description": "Manipulating and processing text data using various string operations and methods. Learn about formatting strings and using regular expressions for pattern matching.",
-        "topics": [
-            "String Operations",
-            "String Methods",
-            "Formatting Strings",
-            "Regular Expressions"
-        ],
-        "contents": {
-            "resources": [
-                "Object Oriented Programming",
-                "Mutability vs Immutability",
-                "Polymorphism"
+                "Vectorization"
             ]
         }
     },
     {
         "name": "Type Hinting",
-        "description": "Incorporating types in code for better readability and error checking. Understand static typing, type annotations, type checking, and static code analysis in Python.",
+        "description": "Type hinting in Python allows you to specify the expected data types of variables, function arguments, and return values. This section covers the basics of static typing, type annotations, type checking, and using static code analysis tools to catch type-related errors before runtime.",
+        "order": 8,
         "topics": [
-            "Static Typing",
-            "Type Annotations",
-            "Type Checking",
-            "Static Code Analysis"
+            "Static",
+            "Annotations",
+            "Checking",
+            "Analysis"
         ],
         "contents": {
             "resources": [
                 "Static Typing",
                 "Static Code Analysis"
+            ]
+        }
+    },
+    {
+        "name": "Automation Projects",
+        "description": "Automation is one of Python's strengths, allowing you to streamline and simplify repetitive tasks. This section focuses on practical automation projects, teaching you how to develop scripts that automate various processes, such as renaming files, sending emails, and performing data analysis. By the end of this section, you'll have the skills to create efficient and effective automation solutions for everyday tasks.",
+        "order": 9,
+        "topics": [
+            "Files",
+            "Emails",
+            "Data",
+            "Projects"
+        ],
+        "contents": {
+            "resources": [
+                "Automation Scripts",
+                "Practical Projects"
             ]
         }
     }

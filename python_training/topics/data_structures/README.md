@@ -1,6 +1,6 @@
 # Data Structures
 
-Organizing and storing data efficiently using lists, tuples, dictionaries, and sets. Learn about the collections module for specialized data structures.
+Python offers a variety of built-in data structures, each suited for different types of data manipulation and storage. This section delves into lists, tuples, sets, and dictionaries, explaining their characteristics and use cases. You'll also learn about list comprehensions, a powerful feature for creating and transforming lists in a concise and readable manner.
 
 ### Topics
 
@@ -8,17 +8,15 @@ Organizing and storing data efficiently using lists, tuples, dictionaries, and s
 
 - Tuples
 
-- Dictionaries
-
 - Sets
 
-- collections Module
+- Dictionaries
+
+- Comprehensions
 
 
 ### Resources
 
-- Object Oriented Programming
+- Lists and Tuples
 
-- Mutability vs Immutability
-
-- Polymorphism
+- Dictionaries and Sets
