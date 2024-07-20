@@ -1,4 +1,4 @@
-# Python Training - Functional Programming
+# Functional Programming
 
 Alternative paradigm.
 

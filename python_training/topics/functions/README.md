@@ -1,4 +1,4 @@
-# Python Training - Functions
+# Functions
 
 
 

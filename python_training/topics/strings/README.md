@@ -1,6 +1,6 @@
-# Classes
+# Strings
 
-Attaching behavior to data.
+...
 
 ### Topics
 

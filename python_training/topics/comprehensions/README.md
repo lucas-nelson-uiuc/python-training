@@ -1,4 +1,4 @@
-# Python Training - Comprehensions
+# Comprehensions
 
 Readable iteration patterns.
 

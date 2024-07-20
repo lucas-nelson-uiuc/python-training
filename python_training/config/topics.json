@@ -1,0 +1,161 @@
+[
+    {
+        "name": "Arithmetic",
+        "description": "...",
+        "topics": ["Code Quality", "Data Structures"],
+        "contents": {
+            "resources": [
+                "Object Oriented Programming",
+                "Mutability vs Immutability",
+                "Polymorphism"
+            ]
+        }
+    },
+    {
+        "name": "Classes",
+        "description": "Attaching behavior to data.",
+        "topics": ["Code Quality", "Data Structures"],
+        "contents": {
+            "resources": [
+                "Object Oriented Programming",
+                "Mutability vs Immutability",
+                "Polymorphism"
+            ]
+        }
+    },
+    {
+        "name": "Comprehensions",
+        "description": "Readable iteration patterns.",
+        "topics": ["Iteration", "Data Structures"],
+        "contents": {
+            "resources": [
+                "Object Oriented Programming",
+                "Mutability vs Immutability",
+                "Polymorphism"
+            ]
+        }
+    },
+    {
+        "name": "Data Types",
+        "description": "...",
+        "order": 2,
+        "topics": ["Code Quality", "Data Structures"],
+        "contents": {
+            "resources": [
+                "Object Oriented Programming",
+                "Mutability vs Immutability",
+                "Polymorphism"
+            ]
+        }
+    },
+    {
+        "name": "Debugging",
+        "description": "Reading and writing exceptions.",
+        "topics": ["Code Quality", "Error Handling"],
+        "contents": {
+            "resources": [
+                "Handling Exceptions",
+                "Failing Early",
+                "Tests: unittest, pytest"
+            ]
+        }
+    },
+    {
+        "name": "Decision Trees",
+        "description": "Reading and writing exceptions.",
+        "order": 4,
+        "topics": ["Code Quality", "Error Handling"],
+        "contents": {
+            "resources": [
+                "Handling Exceptions",
+                "Failing Early",
+                "Tests: unittest, pytest"
+            ]
+        }
+    },
+    {
+        "name": "Functional Programming",
+        "description": "Alternative paradigm.",
+        "topics": ["Code Quality", "Scope", "Iteration"],
+        "contents": {
+            "resources": [
+                "functools",
+                "itertools",
+                "Vectorization",
+                "4"
+            ]
+        }
+    },
+    {
+        "name": "Functions",
+        "description": "",
+        "topics": ["Code Quality", "Scope"],
+        "contents": {
+            "resources": [
+                "Organizing Code",
+                "Parameters",
+                "Environment, Scope, and Closure"
+            ]
+        }
+    },
+    {
+        "name": "Generator Expressions",
+        "description": "Writing code 'promises'.",
+        "topics": ["Iteration", "Memory Pointers"],
+        "contents": {
+            "resources": [
+                "Lazy Evaluation",
+                "Static Code Analysis",
+                "Generator vs Iterator"
+            ]
+        }
+    },
+    {
+        "name": "Iteration",
+        "description": "Operating on a collection of elements.",
+        "topics": ["Iteration", "Data Structures"],
+        "contents": {
+            "resources": [
+                "Looping in Python",
+                "Comprehension Statements",
+                "collections"
+            ]
+        }
+    },
+    {
+        "name": "Introduction",
+        "description": "...",
+        "order": 1,
+        "topics": ["Code Quality", "Data Structures"],
+        "contents": {
+            "resources": [
+                "Object Oriented Programming",
+                "Mutability vs Immutability",
+                "Polymorphism"
+            ]
+        }
+    },
+    {
+        "name": "Strings",
+        "description": "...",
+        "topics": ["Code Quality", "Data Structures"],
+        "contents": {
+            "resources": [
+                "Object Oriented Programming",
+                "Mutability vs Immutability",
+                "Polymorphism"
+            ]
+        }
+    },
+    {
+        "name": "Type Hinting",
+        "description": "Incorporating types in code.",
+        "topics": ["Code Quality", "Code Organization", "Error Handling"],
+        "contents": {
+            "resources": [
+                "Static Typing",
+                "Static Code Analysis"
+            ]
+        }
+    }
+]

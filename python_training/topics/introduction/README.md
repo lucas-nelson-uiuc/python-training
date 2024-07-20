@@ -1,6 +1,6 @@
-# Classes
+# Introduction
 
-Attaching behavior to data.
+...
 
 ### Topics
 

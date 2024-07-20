@@ -1,4 +1,4 @@
-# Python Training - Iteration
+# Iteration
 
 Operating on a collection of elements.
 

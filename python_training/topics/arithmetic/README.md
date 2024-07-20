@@ -1,6 +1,6 @@
-# Classes
+# Arithmetic
 
-Attaching behavior to data.
+...
 
 ### Topics
 

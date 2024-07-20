@@ -1,4 +1,4 @@
-# Python Training - Type Hinting
+# Type Hinting
 
 Incorporating types in code.
 

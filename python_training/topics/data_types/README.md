@@ -1,6 +1,6 @@
-# Classes
+# Data Types
 
-Attaching behavior to data.
+...
 
 ### Topics
 
