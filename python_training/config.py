@@ -12,6 +12,7 @@ FILEPATH_CONFIG = Path("python_training/config")
 FILEPATH_SETUP = FILEPATH_CONFIG.joinpath("config.json")
 
 FILEPATH_TOPICS = Path("python_training/topics")
+FILEPATH_EVALUATE = Path("python_training/evaluate")
 FILEPATH_SOLUTIONS = Path("python_training/solutions")
 FILEPATH_EXERCISES = Path("exercises")
 
@@ -57,12 +58,14 @@ class TrainingConfig:
         """Create default training folder"""
         self.directory_name = self.normalize_filepath(self.training_model.name)
         self.directory_path = FILEPATH_TOPICS.joinpath(self.directory_name)
+        self.solutions_path = FILEPATH_SOLUTIONS.joinpath(self.directory_name)
 
         if not self.directory_path.is_dir():
             self.directory_path.mkdir(parents=True)
 
         self.create_readme()
-        self.create_exercises()
+        self.create_exercises(exercises_filepath=self.directory_path.joinpath(FILEPATH_EXERCISES))
+        self.create_exercises(exercises_filepath=self.solutions_path)
         self.create_solutions()
 
     def create_readme(self) -> None:
@@ -79,9 +82,8 @@ class TrainingConfig:
         readme_filepath = self.directory_path.joinpath("README.md")
         readme_filepath.write_text(readme_rendered)
 
-    def create_exercises(self) -> None:
+    def create_exercises(self, exercises_filepath: Path) -> None:
         """Iteratively pouplate Exercises folder with template exercise files"""
-        exercises_filepath = self.directory_path.joinpath(FILEPATH_EXERCISES)
 
         if not exercises_filepath.is_dir():
             exercises_filepath.mkdir()
@@ -98,7 +100,7 @@ class TrainingConfig:
 
     def create_solutions(self) -> None:
         """Iteratively populate Solutions folder with template solution files"""
-        solutions_filepath = FILEPATH_SOLUTIONS.joinpath(self.directory_name)
+        solutions_filepath = FILEPATH_EVALUATE.joinpath(self.directory_name)
         topic_import_path = ".".join(
             map(
                 str,
