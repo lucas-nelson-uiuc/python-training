@@ -96,7 +96,7 @@ def string_pattern_matching():
     address = "123 99th St, Brooklyn, New York"
     
     # EXAMPLE: what is the username in the user's email address?
-    username_pattern = "^([a-zA-Z0-9\.]+)"
+    username_pattern = "^([a-zA-Z0-9.]+)"
     email_username = (
         re.search(                          # using the search function ...
             re.compile(username_pattern),   # search for instances of the (compiled) pattern ...
