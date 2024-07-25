@@ -13,7 +13,7 @@ def numeric_binary_operations():
     numeric_sum = a + b
     numeric_difference = a - b
     numeric_product = a * b
-    numeric_exponentation = a ** b
+    numeric_exponentation = a**b
     numeric_float_division = a / b
     numeric_floor_division = a // b
     numeric_modulus_division = a % b
