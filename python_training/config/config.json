@@ -5,7 +5,6 @@
         "order": 1,
         "topics": [
             "Variables",
-            "Operators",
             "Strings",
             "Numerics",
             "Booleans"

@@ -5,21 +5,6 @@
 SUBMIT_SOLUTION = False
 
 
-def numeric_comparison_operations():
-    a = 193
-    b = 17
-
-    # TODO: complete the following statements comparing the numeric variables `a` and `b`
-    numeric_greater_than = ...
-    numeric_greater_than_equal_to = ...
-    numeric_less_than = ...
-    numeric_less_than_equal_to = ...
-    numeric_equality = ...
-    numeric_inequality = ...
-
-    return locals()
-
-
 def numeric_binary_operations():
     a = 193
     b = 17
@@ -36,10 +21,25 @@ def numeric_binary_operations():
     return locals()
 
 
+def numeric_comparison_operations():
+    a = 193
+    b = 17
+
+    # TODO: complete the following statements comparing the numeric variables `a` and `b`
+    numeric_greater_than = ...
+    numeric_greater_than_equal_to = ...
+    numeric_less_than = ...
+    numeric_less_than_equal_to = ...
+    numeric_equality = ...
+    numeric_inequality = ...
+
+    return locals()
+
+
 def numeric_math_operations():
     import math
 
-    radius = 25.010010100001
+    radius = 25.4987
 
     # TODO: compute the following operations using math.<operation>(<radius>)
     radius_ceiling = ...
