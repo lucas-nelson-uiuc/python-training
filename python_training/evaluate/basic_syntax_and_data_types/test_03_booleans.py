@@ -1,5 +1,5 @@
 import pytest
-from python_training.topics.basic_syntax_and_data_types.exercises.topic_04_booleans import (
+from python_training.topics.basic_syntax_and_data_types.exercises.topic_03_booleans import (
     SUBMIT_SOLUTION,
     # ... other tests here ...
 )

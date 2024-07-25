@@ -1,5 +1,5 @@
 import pytest
-from python_training.topics.basic_syntax_and_data_types.exercises.topic_02_strings import (
+from python_training.topics.basic_syntax_and_data_types.exercises.topic_01_strings import (
     SUBMIT_SOLUTION,
     string_concatenation,
     string_escaping,

@@ -1,7 +1,7 @@
 ### Variable Naming and Assignment
 
 
-SUBMIT_SOLUTION = True
+SUBMIT_SOLUTION = False
 
 
 def assign_variables():

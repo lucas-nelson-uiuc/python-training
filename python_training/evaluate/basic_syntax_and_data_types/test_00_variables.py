@@ -24,7 +24,7 @@ class TestUserInput:
         assert isinstance(test_scope.get("boolean_var"), bool)
 
     def test_cast_data_types(self):
-        test_scope = fix_data_types()
+        test_scope = cast_data_types()
         assert isinstance(test_scope.get("string_var"), str)
         assert isinstance(test_scope.get("integer_var"), int)
         assert isinstance(test_scope.get("float_var"), float)
