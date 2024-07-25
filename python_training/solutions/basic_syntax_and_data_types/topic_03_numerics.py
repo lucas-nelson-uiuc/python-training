@@ -8,7 +8,7 @@ SUBMIT_SOLUTION = False
 def numeric_comparison_operations():
     a = 193
     b = 17
-    
+
     # TODO: complete the following statements comparing the numeric variables `a` and `b`
     numeric_greater_than = ...
     numeric_greater_than_equal_to = ...
@@ -16,7 +16,7 @@ def numeric_comparison_operations():
     numeric_less_than_equal_to = ...
     numeric_equality = ...
     numeric_inequality = ...
-    
+
     return locals()
 
 
@@ -38,6 +38,7 @@ def numeric_binary_operations():
 
 def numeric_math_operations():
     import math
+
     radius = 25.010010100001
 
     # TODO: compute the following operations using math.<operation>(<radius>)
@@ -49,7 +50,7 @@ def numeric_math_operations():
 
     # TODO: using the math module, complete the following formula for computing the area of a circle
     pi = ...
-    radius_squared = ...                # try not to use the native power expression (`**`)
+    radius_squared = ...  # try not to use the native power expression (`**`)
     circle_area = pi * radius_squared
 
     return locals()
@@ -74,7 +75,7 @@ def string_formatting():
 # [BONUS]
 def numeric_builtin_modules():
     import statistics
-    
+
     # [PROMPT]
     # Python offers a collection of useful math-related packages, the statistics
     # package being one of them. These functions are useful for summarizing a
@@ -88,9 +89,8 @@ def numeric_builtin_modules():
     # Complete the following exercises using the `statistics` package in Python.
     # Almost all results will be of the form `statistics.<operation>(grades)`
 
-
     grades = [78, 90, 56, 100, 80, 82, 94, 62, 77, 83, 83, 96]
-    
+
     # TODO: what is the mode of all grades?
     grades_mean = ...
     # TODO: what is the mean of all grades?
@@ -103,5 +103,5 @@ def numeric_builtin_modules():
     grades_multimode = ...
     # TODO: which of the multimode values occurs the most?
     grades_max_multimode = ...
-    
+
     return locals()

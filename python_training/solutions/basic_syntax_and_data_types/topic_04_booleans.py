@@ -8,19 +8,18 @@ SUBMIT_SOLUTION = False
 def boolean_comparison_operations():
     a = True
     b = False
-    
+
     # TODO: complete the following statements comparing the numeric variables `a` and `b`
     boolean_equality = ...
     boolean_inequality = ...
     boolean_and = ...
     boolean_or = ...
     boolean_xor = ...
-    
+
     return locals()
 
 
 def boolean_truth_tables():
-
     # TODO: what is the result (True or False) of the following expression?
     boolean_expression = False or True or False or False
     boolean_result_1 = ...
@@ -31,10 +30,14 @@ def boolean_truth_tables():
     boolean_expression = (False or True) and (False and False) or True
     boolean_result_3 = ...
     # TODO: what is the result (True or False) of the following expression?
-    boolean_expression = ((not True and False) or True) and (not False and False or (True and not True))
+    boolean_expression = ((not True and False) or True) and (
+        not False and False or (True and not True)
+    )
     boolean_result_4 = ...
     # TODO: what is the result (True or False) of the following expression?
-    boolean_expression = False and not (True or not (False and not (True or not (False and not (True or False)))))
+    boolean_expression = False and not (
+        True or not (False and not (True or not (False and not (True or False))))
+    )
     boolean_result_5 = ...
 
     return locals()
@@ -61,7 +64,6 @@ def boolean_type_conversion():
     # TODO: what is the result (True of False) of converting the follow variable to boolean?
     boolean_string_empty = bool(string_empty)
     boolean_result_4 = ...
-    
 
     return locals()
 
@@ -76,12 +78,11 @@ def string_formatting():
 
 # [BONUS]
 def boolean_truth_tables():
-    
     # [PROMPT]
     # Regular expressions are useful for matching data against generic
     # patterns. Rather than knowing all possible email formats, we can specify
     # the generic pattern for any allowable email.
-    # 
+    #
     # The questions below make use of Python's regular expression module (re)
     # to make you familiar with simple - yet powerful - concepts of pattern
     # matching in Python.
@@ -98,7 +99,7 @@ def boolean_truth_tables():
     # types of programming languages
     using_python = True
     using_java = False
-    
+
     # TODO: determine whether or not the user is using a computer
     using_computer = ...
     # TODO: determine whether or not the user is using one input

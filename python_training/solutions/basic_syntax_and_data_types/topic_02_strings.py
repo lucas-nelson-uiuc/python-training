@@ -9,7 +9,7 @@ def string_repetition():
     string_var = "random"
     # TODO: assign `string_rep` as the value of `string_var` repeated 3 times
     string_rep = string_var * 3
-    
+
     return locals()
 
 
@@ -79,12 +79,12 @@ def string_assertions():
 # [BONUS]
 def string_pattern_matching():
     import re
-    
+
     # [PROMPT]
     # Regular expressions are useful for matching data against generic
     # patterns. Rather than knowing all possible email formats, we can specify
     # the generic pattern for any allowable email.
-    # 
+    #
     # The questions below make use of Python's regular expression module (re)
     # to make you familiar with simple - yet powerful - concepts of pattern
     # matching in Python.
@@ -94,17 +94,18 @@ def string_pattern_matching():
 
     email = "random.email.99th@python.org"
     address = "123 99th St, Brooklyn, New York"
-    
+
     # EXAMPLE: what is the username in the user's email address?
     username_pattern = "^([a-zA-Z0-9.]+)"
     email_username = (
-        re.search(                          # using the search function ...
-            re.compile(username_pattern),   # search for instances of the (compiled) pattern ...
-            email                           # in the passed string ...
-        )
-        .group()                            # and return the matched instance (if there is one)
+        re.search(  # using the search function ...
+            re.compile(
+                username_pattern
+            ),  # search for instances of the (compiled) pattern ...
+            email,  # in the passed string ...
+        ).group()  # and return the matched instance (if there is one)
     )
-    
+
     # TODO: what is the domain of the user's email address?
     domain_pattern = "([a-zA-Z.]+)$"
     email_domain = re.search(re.compile(domain_pattern), email).group()

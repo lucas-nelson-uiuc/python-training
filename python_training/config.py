@@ -64,7 +64,9 @@ class TrainingConfig:
             self.directory_path.mkdir(parents=True)
 
         self.create_readme()
-        self.create_exercises(exercises_filepath=self.directory_path.joinpath(FILEPATH_EXERCISES))
+        self.create_exercises(
+            exercises_filepath=self.directory_path.joinpath(FILEPATH_EXERCISES)
+        )
         self.create_exercises(exercises_filepath=self.solutions_path)
         self.create_solutions()
 

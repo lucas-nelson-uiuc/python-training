@@ -3,7 +3,7 @@ from python_training.topics.basic_syntax_and_data_types.exercises.topic_00_varia
     SUBMIT_SOLUTION,
     assign_variables,
     fix_data_types,
-    cast_data_types
+    cast_data_types,
 )
 
 
